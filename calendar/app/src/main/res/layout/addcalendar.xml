@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:orientation="vertical" >
+
+
+
+
+    <EditText
+        android:hint="กดเลือกวันเริ่มต้นการวิ่ง"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/in_date"
+        android:layout_above="@+id/in_time"
+        android:layout_toStartOf="@+id/btn_time" />
+
+    <EditText
+        android:hint="กดเลือกเวลาเริ่มต้นการวิ่ง"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/in_time"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/in_date" />
+
+
+
+    <Button
+        android:background="@drawable/m7"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btn_time"
+        android:layout_marginEnd="34dp"
+        android:layout_alignTop="@+id/in_date"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ยกเลิก"
+        android:onClick="onCancel"
+        android:id="@+id/button2"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/in_time"
+        android:layout_alignStart="@+id/in_time" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="เพิ่ม"
+        android:id="@+id/button3"
+        android:onClick="onSave"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignEnd="@+id/btn_time"
+        android:layout_marginEnd="43dp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ADD CALENDAR"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="FULL MARATHON"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="6 สัปดาห์"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+
+

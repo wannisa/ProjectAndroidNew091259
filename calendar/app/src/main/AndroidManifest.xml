@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mrbennerham.calendar">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/two"
+        android:label="PawarisaClinic"
+        android:supportsRtl="true"
+        android:name="android.support.multidex.MultiDexApplication"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Main_MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.INSERT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Menu_Home" />
+        <activity android:name=".Login_Man" />
+        <activity android:name=".MenuHome_Man" />
+        <activity android:name=".Notifications" />
+        <activity android:name=".Calendar_female" />
+        <activity android:name=".AddOrEditCalendarActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".FeedArticleActivity" />
+        <activity android:name=".ViewArticleActivity" />
+        <activity android:name=".CalendarShowEvent" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
